@@ -162,32 +162,52 @@ img.alignright {
   float: left;
   clear: both; }
 
+.is-hidden {
+  display: none; }
+
+.content .post h1.entry-title {
+  font-family: 'Cutive Mono', serif;
+  text-transform: uppercase;
+  font-size: 3rem; }
+.content .post p {
+  text-align: left; }
+
+.pageTitle {
+  font-family: 'Cutive Mono', sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 0;
+  letter-spacing: 0.3rem; }
+
 .entry-content {
   border-top: 3px solid black;
   padding: 2% 0;
   text-align: center; }
+  .entry-content:nth-child(odd) .thumbCont {
+    float: right; }
   .entry-content .contentContainer {
-    width: 45%;
+    width: 50%;
     display: inline-block;
-    vertical-align: top; }
-  .entry-content .attachment-rectangle {
-    display: inline-block;
-    margin: 0 2% 2% 0; }
+    vertical-align: top;
+    padding: 1% 2%; }
+  .entry-content .thumbCont {
+    float: left;
+    width: 50%;
+    display: inline-block; }
   .entry-content .byline {
     font-size: 0.8rem;
     display: block;
     font-family: 'Cutive Mono', serif;
     margin: 1% 0 4% 0; }
   .entry-content h2 {
-    display: block; }
-  .entry-content .entry-title {
-    margin-top: 2%; }
-    .entry-content .entry-title a {
-      color: black;
-      font-family: 'Cutive Mono', serif;
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      font-size: 2rem; }
+    display: block;
+    margin: 0; }
+  .entry-content .entry-title a {
+    color: black;
+    font-family: 'Cutive Mono', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem; }
   .entry-content p {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.1rem;
@@ -225,8 +245,13 @@ img.alignright {
     color: #454545; }
 
 footer {
-  background: dimgrey;
-  color: white; }
+  background: tan;
+  color: white;
+  font-family: 'Cutive Mono', serif;
+  text-align: center;
+  margin-top: 5%; }
+  footer .container {
+    padding: 3%; }
   footer p {
     display: inline; }
   footer ul {
@@ -322,7 +347,8 @@ svg.ham {
   position: fixed;
   top: 0;
   right: 0;
-  fill: tan; }
+  fill: black;
+  z-index: 200; }
 
 .navContainer {
   width: 100vw;
@@ -332,8 +358,7 @@ svg.ham {
   z-index: 100;
   top: 0;
   left: 0;
-  overflow: hidden;
-  display: none; }
+  overflow: hidden; }
 
 #menu-main {
   padding: 0;

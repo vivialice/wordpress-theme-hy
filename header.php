@@ -34,7 +34,7 @@
         <path d="M81.653,72.693c0,0.9-0.729,1.629-1.629,1.629H9.976c-0.9,0-1.629-0.729-1.629-1.629V61.29c0-0.9,0.729-1.629,1.629-1.629   h70.048c0.9,0,1.629,0.729,1.629,1.629V72.693z"/>
       </g>
       </svg>
-    <div class="navContainer">
+    <div class="navContainer is-hidden">
     <?php wp_nav_menu(array(
       'container' => false,
       'container_id' => 'nav',

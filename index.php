@@ -5,7 +5,7 @@
   <div class="container">
 
     <!-- <div class="content"> -->
-    		<p>NEWS</p>
+    		<h1 class="pageTitle">News</h1>
     		<?php get_template_part( 'loop', 'index' );	?>
     <!-- </div> /.content  -->
 

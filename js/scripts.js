@@ -1,3 +1,5 @@
 $(function(){
-	//your jQuery here
+	$('.ham').on('click', function(){
+		$('.navContainer').toggleClass('is-hidden');
+	});
 });

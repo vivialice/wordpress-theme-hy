@@ -138,7 +138,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clear: both; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
@@ -168,9 +169,16 @@ img.alignright {
 .content .post h1.entry-title {
   font-family: 'Cutive Mono', serif;
   text-transform: uppercase;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-bottom: 1%; }
 .content .post p {
-  text-align: left; }
+  text-align: left;
+  line-height: 1.5;
+  margin: 2% 0; }
+.content .post .entry-meta {
+  font-family: 'Cutive Mono', serif;
+  margin-bottom: 1%;
+  font-size: 1rem; }
 
 .pageTitle {
   font-family: 'Cutive Mono', sans-serif;
@@ -257,6 +265,10 @@ footer {
   footer ul {
     display: inline; }
 
+.featureImage {
+  height: 100vh;
+  background-size: cover; }
+
 /* =============================================================================
                    Default Styling
    ========================================================================== */
@@ -266,8 +278,8 @@ footer {
 
 .content {
   float: left;
-  width: 65%;
-  margin-right: 5%; }
+  width: 75%;
+  margin-right: 2%; }
 
 .full {
   width: 100%; }
@@ -324,7 +336,8 @@ pre {
                    Sidebar
    ========================================================================== */
 .sidebar {
-  width: 30%;
+  width: 20%;
+  margin-top: 10%;
   float: left; }
 
 .sidebar ul {

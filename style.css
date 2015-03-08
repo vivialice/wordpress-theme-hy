@@ -190,32 +190,41 @@ img.alignright {
       fill: white;
       margin: 0 auto; }
 
-section.main {
-  background: white; }
-  section.main h2, section.main h4 {
+section.main, section.main2 {
+  background: white;
+  width: 100%; }
+  section.main h2, section.main h4, section.main2 h2, section.main2 h4 {
     font-family: 'Cutive Mono', serif;
     text-transform: uppercase; }
-  section.main h2 {
+  section.main h2, section.main2 h2 {
     font-size: 2rem; }
-  section.main h4 {
+  section.main h4, section.main2 h4 {
     font-size: 1.2rem;
     margin: 10% 0 6% 0; }
-  section.main p {
+  section.main p, section.main2 p {
     font-family: 'Raleway', sans-serif;
     margin: 5px;
     font-size: 0.9rem; }
-  section.main .imageMain {
-    width: 60%;
-    float: left; }
-  section.main .infoContainer {
+  section.main .infoContainer, section.main2 .infoContainer {
     width: 40%;
     padding: 5%;
     float: left; }
+  section.main .imageContainer, section.main2 .imageContainer {
+    width: 60%;
+    float: left; }
+    section.main .imageContainer .imageMain1, section.main2 .imageContainer .imageMain1 {
+      height: 550px; }
 
 .secondHero {
   height: 400px;
   width: 100%;
   clear: both; }
+
+section.main2 .imageContainer2 {
+  width: 60%;
+  float: left; }
+  section.main2 .imageContainer2 .imageMain2 {
+    height: 400px; }
 
 .content .post h1.entry-title {
   font-family: 'Cutive Mono', serif;

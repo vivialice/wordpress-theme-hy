@@ -8,9 +8,8 @@
 get_header();  ?>
 
 <div class="main">
-  
-
-
+      
+      <!-- Get image thumbnail to use as bg image in div -->
       <?php $feature_img = get_post_thumbnail_id();
             $feature_img_url = wp_get_attachment_image_src( $feature_img, 'thumbnail-size', true );
             $feature_url = $feature_img_url[0];
@@ -33,10 +32,10 @@ get_header();  ?>
       </div> <!-- .featureImage --> 
 
       <section class="main">
-
-        <div class="imageMain">
-          <img src="<?php echo the_field( "cafeimage" ); ?>" class="customImage" alt="">
-        </div> <!-- ends .imageMain -->
+        <div class="imageContainer">
+          <div class="imageMain1" style="background-image: url(<?php echo the_field( "cafeimage" ); ?>); background-position: center; background-size: 1000px;">
+          </div> <!-- ends .imageMain1 -->
+        </div><!-- /.imageContainer -->
 
         <div class="infoContainer">
           <h2>The Café</h2>
@@ -53,22 +52,26 @@ get_header();  ?>
         </div><!-- /.infoContainer -->
 
       </section><!-- /.main -->
-        <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage1" ); ?>); background-repeat: no-repeat; background-attachment: fixed;" >
+        <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage1" ); ?>); background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: 1600px;" >
       </div><!-- /.secondHero -->
 
-      <section class="Main2">
+      <section class="main2 clearfix">
+        <div class="infoContainer">
+          <h2>The Boutique</h2>
+
+          <p>Galão, single origin black, that, breve, qui, at beans mug sugar plunger pot. Medium aromatic, wings affogato id, steamed et shop a coffee extraction.</p>
+
+          <p>Percolator, beans decaffeinated strong sit cream aroma. And dripper, viennese wings decaffeinated extra single origin.
+          </p>
+        </div><!-- /.infoContainer -->
         
-        <div class="imageMain2">
-        </div> <!-- ends .imageMain2 -->
-      </section><!-- /.Main2 -->
+        <div class="imageContainer2">
+          <div class="imageMain2" style="background-image: url(<?php echo the_field( "shopimage" ); ?>); background-position: center; background-size: 1000px;">
+          </div> <!-- ends .imageMain2 -->
+        </div><!-- /.imageContainer2 -->
+      </section><!-- /.main2 -->
 
 
-
-  <div class="container">
-
-
-
-  </div> <!-- /.container -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

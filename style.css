@@ -188,12 +188,27 @@ img.alignright {
       fill: white;
       margin: 0 auto; }
 
-.infoContainer {
+section.main {
   background: white; }
-  .infoContainer .imageMain {
-    width: 50%; }
-  .infoContainer .infoContainer {
-    width: 50%; }
+  section.main h2, section.main h4 {
+    font-family: 'Cutive Mono', serif;
+    text-transform: uppercase; }
+  section.main h2 {
+    font-size: 2rem; }
+  section.main h4 {
+    font-size: 1.2rem;
+    margin: 10% 0 6% 0; }
+  section.main p {
+    font-family: 'Raleway', sans-serif;
+    margin: 5px;
+    font-size: 0.9rem; }
+  section.main .imageMain {
+    width: 60%;
+    float: left; }
+  section.main .infoContainer {
+    width: 40%;
+    padding: 5%;
+    float: left; }
 
 .content .post h1.entry-title {
   font-family: 'Cutive Mono', serif;

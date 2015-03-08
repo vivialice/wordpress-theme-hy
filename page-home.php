@@ -35,14 +35,19 @@ get_header();  ?>
       <section class="main">
 
         <div class="imageMain">
-        </div>
+
+         
+        <img src="<?php echo get_field( "cafeimage" ); ?>" class="customImage" alt="">
+
+<!--           <img src="<?php bloginfo('template_directory'); ?>/img/shop.jpg" alt=""> -->
+        </div> <!-- ends .imageMain -->
 
         <div class="infoContainer">
           <h2>The Café</h2>
 
-          <p>Galão, single origin black, that, breve, qui, at beans mug sugar plunger pot. Medium aromatic, wings affogato id, steamed et shop a coffee extraction.
+          <p>Galão, single origin black, that, breve, qui, at beans mug sugar plunger pot. Medium aromatic, wings affogato id, steamed et shop a coffee extraction.</p>
 
-          Percolator, beans decaffeinated strong sit cream aroma. And dripper, viennese wings decaffeinated extra single origin.
+          <p>Percolator, beans decaffeinated strong sit cream aroma. And dripper, viennese wings decaffeinated extra single origin.
           </p>
 
           <h4>Hours</h4>
@@ -52,6 +57,8 @@ get_header();  ?>
         </div><!-- /.infoContainer -->
 
       </section><!-- /.main -->
+
+      <!-- <?php var_dump($image_object); ?> -->
 
 
 

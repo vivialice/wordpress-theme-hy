@@ -1,7 +1,5 @@
 $(function(){
 	$('.ham').on('click', function(){
-		// $('.navContainer').animate({ "right": "0vw" }, "slow" );
-		console.log('click works');
 
 		// menu variables
 		var slideoutMenu = $('.navContainer');

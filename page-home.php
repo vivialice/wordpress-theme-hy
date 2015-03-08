@@ -53,8 +53,7 @@ get_header();  ?>
         </div><!-- /.infoContainer -->
 
       </section><!-- /.main -->
-
-      <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage1" ); ?>); background-repeat: no-repeat; background-attachment: fixed;" >
+        <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage1" ); ?>); background-repeat: no-repeat; background-attachment: fixed;" >
       </div><!-- /.secondHero -->
 
       <section class="Main2">

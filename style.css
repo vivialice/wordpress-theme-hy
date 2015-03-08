@@ -171,15 +171,17 @@ img.alignright {
   background-size: cover;
   background-attachment: fixed;
   padding: 20% 2%; }
-  .featureImage .titleContainer h1 {
-    margin: 0;
-    font-family: 'Cutive Mono', serif;
-    background: white;
-    display: inline-block;
-    padding: 2%;
-    text-transform: uppercase; }
-    .featureImage .titleContainer h1 span {
-      color: lightblue; }
+  .featureImage .titleContainer {
+    text-align: center; }
+    .featureImage .titleContainer h1 {
+      margin: 0;
+      font-family: 'Cutive Mono', serif;
+      background: white;
+      display: inline-block;
+      padding: 2%;
+      text-transform: uppercase; }
+      .featureImage .titleContainer h1 span {
+        color: lightblue; }
   .featureImage .scroll {
     display: block;
     text-align: center;

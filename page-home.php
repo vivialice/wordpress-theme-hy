@@ -35,11 +35,7 @@ get_header();  ?>
       <section class="main">
 
         <div class="imageMain">
-
-         
-        <img src="<?php echo get_field( "cafeimage" ); ?>" class="customImage" alt="">
-
-<!--           <img src="<?php bloginfo('template_directory'); ?>/img/shop.jpg" alt=""> -->
+          <img src="<?php echo the_field( "cafeimage" ); ?>" class="customImage" alt="">
         </div> <!-- ends .imageMain -->
 
         <div class="infoContainer">
@@ -58,11 +54,14 @@ get_header();  ?>
 
       </section><!-- /.main -->
 
-      <div class="secondHero">
-        
+      <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage1" ); ?>); background-repeat: no-repeat; background-attachment: fixed;" >
       </div><!-- /.secondHero -->
 
-      <!-- <?php var_dump($image_object); ?> -->
+      <section class="Main2">
+        
+        <div class="imageMain2">
+        </div> <!-- ends .imageMain2 -->
+      </section><!-- /.Main2 -->
 
 
 

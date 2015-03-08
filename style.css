@@ -210,6 +210,11 @@ section.main {
     padding: 5%;
     float: left; }
 
+.secondHero {
+  height: 400px;
+  width: 100%;
+  clear: both; }
+
 .content .post h1.entry-title {
   font-family: 'Cutive Mono', serif;
   text-transform: uppercase;

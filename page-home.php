@@ -50,10 +50,10 @@ get_header();  ?>
           <p>Saturday | 8am - 5pm</p>
           <p>Sunday | 9am - 5pm</p>
         </div><!-- /.infoContainer -->
-
       </section><!-- /.main -->
+
         <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage1" ); ?>); background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: 1600px;" >
-      </div><!-- /.secondHero -->
+        </div><!-- /.secondHero -->
 
       <section class="main2 clearfix">
         <div class="infoContainer">
@@ -70,6 +70,35 @@ get_header();  ?>
           </div> <!-- ends .imageMain2 -->
         </div><!-- /.imageContainer2 -->
       </section><!-- /.main2 -->
+
+      <div class="secondHero clearfix" style="background-image: url(<?php echo the_field( "fixedimage2" ); ?>); background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: 1600px;" >
+      </div><!-- /.secondHero -->
+
+
+      <section class="recentPosts">
+
+      <?php
+      $home_query = new WP_Query('showposts=2');
+      if ( $home_query -> have_posts() ) : while ( $home_query -> have_posts() ) : $home_query -> the_post(); ?>
+
+            <div class="recentPost">
+              <?php the_post_thumbnail('home_blog'); ?>
+              <h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <?php the_excerpt(); ?>
+            </div> <!-- / .recentPost -->
+
+      <?php endwhile; ?>
+      <?php endif; ?>
+
+<!--         <div class="recentCont">
+          <h3></h3>
+            
+        </div>
+        <div class="recentCont">
+          <h3></h3>
+        </div> -->
+
+      </section><!-- /.recentPosts -->
 
 
 </div> <!-- /.main -->

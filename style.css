@@ -316,8 +316,7 @@ footer {
   background: lightblue;
   color: white;
   font-family: 'Cutive Mono', serif;
-  text-align: center;
-  margin-top: 5%; }
+  text-align: center; }
   footer .container {
     padding: 3%; }
   footer p {

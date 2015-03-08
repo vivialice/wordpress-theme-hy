@@ -58,6 +58,10 @@ get_header();  ?>
 
       </section><!-- /.main -->
 
+      <div class="secondHero">
+        
+      </div><!-- /.secondHero -->
+
       <!-- <?php var_dump($image_object); ?> -->
 
 

@@ -297,7 +297,7 @@ section.main {
     color: #454545; }
 
 footer {
-  background: tan;
+  background: lightblue;
   color: white;
   font-family: 'Cutive Mono', serif;
   text-align: center;
@@ -407,6 +407,10 @@ svg.ham {
   right: 20px;
   fill: white;
   z-index: 100; }
+  .blog svg.ham {
+    fill: black; }
+  .single svg.ham {
+    fill: black; }
 
 .navContainer {
   width: 100vw;

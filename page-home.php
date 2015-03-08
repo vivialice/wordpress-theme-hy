@@ -75,7 +75,7 @@ get_header();  ?>
       </div><!-- /.secondHero -->
 
 
-      <section class="recentPosts">
+      <section class="recentPosts clearfix">
 
       <?php
       $home_query = new WP_Query('showposts=2');
@@ -83,8 +83,10 @@ get_header();  ?>
 
             <div class="recentPost">
               <?php the_post_thumbnail('home_blog'); ?>
-              <h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-              <?php the_excerpt(); ?>
+              <div class="postContent">
+                <h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <?php the_excerpt(); ?>
+              </div><!-- /.postContent -->
             </div> <!-- / .recentPost -->
 
       <?php endwhile; ?>

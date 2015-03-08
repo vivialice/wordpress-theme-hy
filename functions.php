@@ -14,7 +14,7 @@ function theme_setup() {
 	set_post_thumbnail_size(120, 90, true);
 	add_image_size('square', 150, 150, true);
 	add_image_size('rectangle', 600, 400, true);
-	add_image_size('home_blog', 200, 200, true);
+	add_image_size('home_blog', 600, 200, true);
 
 
 	// Add default posts and comments RSS feed links to head

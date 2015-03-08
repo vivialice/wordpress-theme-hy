@@ -166,6 +166,35 @@ img.alignright {
 .is-hidden {
   display: none; }
 
+.featureImage {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20% 2%; }
+  .featureImage .titleContainer h1 {
+    margin: 0;
+    font-family: 'Cutive Mono', serif;
+    background: white;
+    display: inline-block;
+    padding: 2%;
+    text-transform: uppercase; }
+    .featureImage .titleContainer h1 span {
+      color: lightblue; }
+  .featureImage .scroll {
+    display: block;
+    text-align: center;
+    padding: 20% 0; }
+    .featureImage .scroll svg {
+      fill: white;
+      margin: 0 auto; }
+
+.infoContainer {
+  background: white; }
+  .infoContainer .imageMain {
+    width: 50%; }
+  .infoContainer .infoContainer {
+    width: 50%; }
+
 .content .post h1.entry-title {
   font-family: 'Cutive Mono', serif;
   text-transform: uppercase;
@@ -265,10 +294,6 @@ footer {
   footer ul {
     display: inline; }
 
-.featureImage {
-  height: 100vh;
-  background-size: cover; }
-
 /* =============================================================================
                    Default Styling
    ========================================================================== */
@@ -356,36 +381,65 @@ footer {
 /* =============================================================================
                    Navigation
    ========================================================================== */
+header {
+  position: fixed;
+  top: 42px;
+  left: 25px; }
+
 svg.ham {
   position: fixed;
-  top: 0;
-  right: 0;
-  fill: black;
-  z-index: 200; }
+  top: 42px;
+  right: 20px;
+  fill: white;
+  z-index: 100; }
 
 .navContainer {
   width: 100vw;
   height: 100vh;
-  background: tan;
+  background: lightblue;
   position: fixed;
   z-index: 100;
   top: 0;
-  left: 0;
+  right: -100vw;
   overflow: hidden; }
+  .navContainer svg.close {
+    top: 42px;
+    right: 17px;
+    margin: 0;
+    color: black;
+    font-size: 2rem;
+    z-index: 150;
+    position: fixed; }
+  .navContainer h3 {
+    text-align: center;
+    font-family: 'Cutive Mono', serif;
+    font-size: 0.8rem;
+    color: white; }
+  .navContainer svg {
+    fill: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%; }
+  .navContainer .social {
+    text-align: center;
+    padding-top: 1%; }
+    .navContainer .social img {
+      padding: 1%; }
 
 #menu-main {
   padding: 0;
   margin: 0;
   list-style-type: none;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 2%;
   font-family: 'Cutive Mono', serif;
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   font-size: 3rem;
   line-height: 1.5; }
   #menu-main a {
-    color: white; }
+    color: white;
+    margin-left: 1%; }
   #menu-main a:hover {
     color: dimgray; }
 

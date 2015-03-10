@@ -92,14 +92,6 @@ get_header();  ?>
       <?php endwhile; ?>
       <?php endif; ?>
 
-<!--         <div class="recentCont">
-          <h3></h3>
-            
-        </div>
-        <div class="recentCont">
-          <h3></h3>
-        </div> -->
-
       </section><!-- /.recentPosts -->
 
 

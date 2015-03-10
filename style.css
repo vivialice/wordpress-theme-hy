@@ -256,24 +256,103 @@ section.main2 .imageContainer2 {
       font-family: 'Cutive Mono', serif; }
 
 .content .post h1.entry-title {
-  font-family: 'Cutive Mono', serif;
+  font-family: 'Cutive Mono', monospace;
   text-transform: uppercase;
   font-size: 3rem;
-  margin-bottom: 1%; }
+  margin: 7% 0 0 0; }
 .content .post p {
   text-align: left;
   line-height: 1.5;
   margin: 2% 0; }
 .content .post .entry-meta {
-  font-family: 'Cutive Mono', serif;
-  margin-bottom: 1%;
+  font-family: 'Cutive Mono', monospace;
+  margin-bottom: 3%;
   font-size: 1rem; }
+  .content .post .entry-meta span.entry-date {
+    color: lightblue; }
+  .content .post .entry-meta span.author a {
+    color: lightblue; }
+
+.entry-utility {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem; }
+  .entry-utility a {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.2rem;
+    color: lightblue; }
+
+#nav-below p.nav-previous, #nav-below p.nav-next {
+  margin: 5% 0; }
+  #nav-below p.nav-previous a, #nav-below p.nav-next a {
+    color: lightblue;
+    font-family: 'Cutive Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+
+h2.comments-title {
+  font-family: 'Cutive Mono', monospace;
+  text-transform: uppercase;
+  font-size: 1.7rem; }
+
+#respond h3.comment-reply-title {
+  font-family: 'Cutive Mono', monospace;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-top: 5%; }
+
+ol.comment-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; }
+
+ol.children {
+  list-style-type: none;
+  font-family: 'Raleway',sans-serif; }
+
+.comment-content {
+  margin-bottom: 3%; }
+
+a.comment-reply-link {
+  font-family: 'Cutive Mono', monospace;
+  border: 2px solid black;
+  padding: 1%;
+  text-transform: uppercase;
+  color: black; }
+
+footer.comment-meta {
+  background: none;
+  text-align: left; }
+  footer.comment-meta .comment-author {
+    color: black;
+    font-size: 1rem; }
+    footer.comment-meta .comment-author .fn {
+      color: lightblue; }
+  footer.comment-meta .comment-meta-data {
+    margin: 2%; }
+    footer.comment-meta .comment-meta-data a time {
+      font-size: 1rem; }
+
+p.logged-in-as {
+  font-family: 'Cutive Mono', monospace; }
+  p.logged-in-as a {
+    color: lightblue; }
+  p.logged-in-as a:hover {
+    color: gray; }
+
+aside.pullquote, blockquote.pullquote, .pullquote {
+  margin: 0;
+  width: 100%;
+  display: block; }
+  aside.pullquote p, blockquote.pullquote p, .pullquote p {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1rem; }
 
 .pageTitle {
   font-family: 'Cutive Mono', sans-serif;
   text-transform: uppercase;
   font-size: 4rem;
-  margin: 0;
+  margin: 5% 0 2% 0;
   letter-spacing: 0.3rem; }
 
 .entry-content {
@@ -420,16 +499,50 @@ pre {
                    Sidebar
    ========================================================================== */
 .sidebar {
-  width: 20%;
-  margin-top: 10%;
-  float: left; }
-
-.sidebar ul {
-  margin: 0;
-  padding: 0; }
-
-.sidebar ul li {
-  list-style: none; }
+  width: 23%;
+  margin-top: 15%;
+  float: left;
+  border: 3px solid black;
+  padding: 2%; }
+  .sidebar ul {
+    margin: 0;
+    padding: 0; }
+  .sidebar ul li {
+    list-style: none;
+    margin-left: 0; }
+    .sidebar ul li a {
+      color: lightblue;
+      font-family: 'Raleway', sans-serif; }
+    .sidebar ul li a:hover {
+      color: dimgrey; }
+    .sidebar ul li li.recentcomments {
+      margin-top: 2%;
+      font-family: 'Raleway', sans-serif; }
+      .sidebar ul li li.recentcomments a {
+        font-family: 'Cutive Mono', serif;
+        text-transform: uppercase;
+        font-size: 1.2rem; }
+  .sidebar h3 {
+    font-family: 'Cutive Mono', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 2%;
+    border-bottom: 3px solid black; }
+  .sidebar input#s {
+    border: 2px solid black;
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    padding: 4%;
+    font-size: 0.8rem; }
+  .sidebar input.searchsubmit {
+    background: lightblue;
+    border: none;
+    color: white;
+    font-family: 'Cutive Mono', sans-serif;
+    padding: 3%;
+    margin-top: 5%; }
+  .sidebar input.searchsubmit:hover {
+    background: dimgrey; }
 
 /* =============================================================================
                    Footer
@@ -442,12 +555,12 @@ footer {
    ========================================================================== */
 header {
   position: fixed;
-  top: 42px;
+  top: 10px;
   left: 25px; }
 
 svg.ham {
   position: fixed;
-  top: 42px;
+  top: 20px;
   right: 20px;
   fill: white;
   z-index: 100; }
@@ -466,7 +579,7 @@ svg.ham {
   right: -100vw;
   overflow: hidden; }
   .navContainer svg.close {
-    top: 42px;
+    top: 15px;
     right: 17px;
     margin: 0;
     color: black;
@@ -529,7 +642,7 @@ h3#comments-title {
   padding: 24px 0; }
 
 .commentlist li.comment {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid black;
   line-height: 24px;
   position: relative;
   clear: both;
@@ -587,7 +700,7 @@ h3#comments-title {
 #comments .pingback {
   margin-bottom: 18px;
   padding-bottom: 18px;
-  border-bottom: 1px solid #e7e7e7; }
+  border-bottom: 1px solid black; }
 
 .commentlist li.comment + li.pingback {
   margin-top: -6px; }
@@ -608,7 +721,7 @@ input[type=submit] {
 
 #respond {
   margin-top: 24px;
-  border-top: 1px solid #e7e7e7;
+  border-top: 3px solid black;
   overflow: hidden;
   position: relative; }
 
@@ -637,8 +750,9 @@ h3#reply-title {
   font-weight: 700; }
 
 #respond label {
-  color: #888888;
-  font-size: 12px; }
+  color: black;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif; }
 
 #respond input {
   width: 98%;
@@ -660,7 +774,14 @@ h3#reply-title {
 
 #respond .form-submit input {
   width: auto;
-  font-size: 14px; }
+  background: lightblue;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-family: 'Cutive Mono', monospace;
+  padding: 2%; }
+  #respond .form-submit input:hover {
+    background: dimgray; }
 
 #respond dl {
   margin: 0 0 10px; }
@@ -680,7 +801,8 @@ p.form-allowed-tags, .nocomments {
   margin: 0; }
 
 .comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover {
-  color: #ff4b33; }
+  color: lightblue; }
 
 #respond p, #comments-list ul #respond {
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 2%; }
